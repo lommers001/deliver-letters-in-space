@@ -1,0 +1,9 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://b6ptv7lyfyyqi"]
+
+[ext_resource type="FontFile" uid="uid://dp4t37ffkb82p" path="res://NovaSquare.ttf" id="1_ou8of"]
+
+[resource]
+default_font = ExtResource("1_ou8of")
+default_font_size = 40
+HeaderLarge/font_sizes/font_size = 56
+Label/font_sizes/font_size = 40

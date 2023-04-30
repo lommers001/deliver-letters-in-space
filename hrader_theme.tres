@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://dgvf5d60po1mx"]
+
+[ext_resource type="FontFile" uid="uid://ry0v5dlwe3gr" path="res://FoundationOne.ttf" id="1_ycja0"]
+
+[resource]
+default_font = ExtResource("1_ycja0")
+default_font_size = 40
+Label/colors/font_color = Color(0.75, 0.5, 1, 1)

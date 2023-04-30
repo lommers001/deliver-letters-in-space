@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=3 uid="uid://b4tqovso21x2v"]
+
+[ext_resource type="Script" path="res://Scripts/letter.gd" id="1_ps71p"]
+[ext_resource type="Theme" uid="uid://b6ptv7lyfyyqi" path="res://text_theme.tres" id="2_c0yww"]
+[ext_resource type="AudioStream" uid="uid://b3ox3oqa2u6q4" path="res://SFX/sfx_transmute_shot.wav" id="3_vmqw7"]
+[ext_resource type="AudioStream" uid="uid://ctw4yml14tknm" path="res://SFX/sfx_select.wav" id="4_llhog"]
+[ext_resource type="AudioStream" uid="uid://cpm2tr1tlk41" path="res://SFX/sfx_not_set.wav" id="5_t82kf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3vsdh"]
+radius = 16.0
+
+[node name="Letter" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_ps71p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_3vsdh")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_c0yww")
+text = "S"
+uppercase = true
+
+[node name="sfx_fire" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_vmqw7")
+
+[node name="sfx_select" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_llhog")
+
+[node name="sfx_wildcard_not_set" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_t82kf")
